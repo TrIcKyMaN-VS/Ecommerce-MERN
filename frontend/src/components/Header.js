@@ -9,7 +9,8 @@ const Header = ({ cartItems }) => {
         <div className="col-12 col-md-3">
           <div className="navbar-brand">
             <Link to="/">
-              <img width="150px" src="../images/VS-5-29-2024.jpg" />
+              {/* <img width="150px" src="../images/VS-5-29-2024.jpg" /> */}
+              <h2 className="text-primary">𝐕𝐒 𝐂𝐀𝐑𝐓</h2>
             </Link>
           </div>
         </div>
@@ -20,7 +21,7 @@ const Header = ({ cartItems }) => {
 
         <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
           <Link to="/cart">
-            <span id="cart" className="ml-3">
+            <span id="cart" className="ml-3 fw-bold">
               Cart
             </span>
             <span className="ml-1 text-black" id="cart_count">

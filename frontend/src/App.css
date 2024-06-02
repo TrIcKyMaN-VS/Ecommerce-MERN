@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -519,6 +515,12 @@ footer {
 }
 
 /* Admin Sidebar */
+Link{
+ text-decoration: none; 
+}
+a, a:hover{
+  text-decoration: none;
+}
 
 .sidebar-wrapper {
   display: flex;
