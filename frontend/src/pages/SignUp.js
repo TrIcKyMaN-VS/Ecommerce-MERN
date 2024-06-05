@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -9,7 +10,15 @@ const SignUp = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
+    axios.post("http://localhost:8000/api/signup", data
+    )
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
   };
 
   return (
@@ -37,7 +46,7 @@ const SignUp = () => {
                       name="uname"
                       id="uname"
                       placeholder="John Doe"
-                      {...register("uname", { required: "Username is required" })}
+                      {...register("username", { required: "Username is required" })}
                     />
                     {errors.uname && <p role="alert" className="text-danger">{errors.uname.message}</p>}
                   </div>
